@@ -1,0 +1,42 @@
+ 
+****************************************
+Report : area
+Design : axi_lite_top
+Version: W-2024.09-SP2
+Date   : Wed Oct 21 16:18:32 2026
+****************************************
+
+Number of ports:                          718
+Number of nets:                          4861
+Number of cells:                         4078
+Number of combinational cells:           3366
+Number of sequential cells:               707
+Number of macros/black boxes:               0
+Number of buf/inv:                        370
+Number of references:                       4
+
+Combinational area:               2851.253952
+Buf/Inv area:                      230.356001
+Noncombinational area:            3540.726048
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  6391.980000
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  -------------------------
+axi_lite_top                      6391.9800    100.0    19.6840     0.0000  0.0000  axi_lite_top
+reg_bank_inst                      583.6040      9.1   332.2340   251.3700  0.0000  reg_bank
+slave_fsm_inst                    1104.1660     17.3   322.1260   782.0400  0.0000  slave_fsm
+sync_fifo_inst                    4684.5260     73.3  2177.2100  2507.3161  0.0000  sync_fifo_WIDTH32_DEPTH16
+--------------------------------  ---------  -------  ---------  ---------  ------  -------------------------
+Total                                                 2851.2540  3540.7260  0.0000
+
+1
