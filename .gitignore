@@ -1,0 +1,14 @@
+# Simulation outputs
+sim/work/
+sim/transcript
+sim/run.log
+
+# Synthesis runs (large, generated; key reports are copied to docs/ instead)
+synth/runs/
+
+# Tool logs
+command.log
+*.log
+
+# Contains an internal university library path
+synth/scripts/.synopsys_dc.setup
