@@ -1,0 +1,60 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : axi_lite_top
+Version: W-2024.09-SP2
+Date   : Wed Oct 21 16:16:35 2026
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm
+Wire Load Model Mode: top
+
+  Startpoint: slave_fsm_inst/intern_raddr_reg[9]
+              (rising edge-triggered flip-flop clocked by ACLK)
+  Endpoint: slave_fsm_inst/RDATA_reg[0]
+            (rising edge-triggered flip-flop clocked by ACLK)
+  Path Group: ACLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ACLK (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  slave_fsm_inst/intern_raddr_reg[9]/CK (DFFR_X1)       0.0000     0.0000 r
+  slave_fsm_inst/intern_raddr_reg[9]/Q (DFFR_X1)        0.4997     0.4997 r
+  slave_fsm_inst/intern_raddr[9] (slave_fsm)            0.0000     0.4997 r
+  reg_bank_inst/intern_raddr[9] (reg_bank)              0.0000     0.4997 r
+  reg_bank_inst/U25/ZN (NOR2_X2)                        0.0541     0.5537 f
+  reg_bank_inst/U12/ZN (AND2_X1)                        0.1543     0.7080 f
+  reg_bank_inst/U11/ZN (AND4_X2)                        0.3714     1.0794 f
+  reg_bank_inst/U109/ZN (AND3_X2)                       0.2169     1.2962 f
+  reg_bank_inst/U303/ZN (NAND2_X1)                      0.1936     1.4899 r
+  reg_bank_inst/U52/ZN (INV_X1)                         0.0707     1.5606 f
+  reg_bank_inst/U309/ZN (AND3_X2)                       0.2125     1.7731 f
+  reg_bank_inst/U310/ZN (AOI22_X1)                      0.3768     2.1499 r
+  reg_bank_inst/U67/ZN (NAND4_X1)                       0.1722     2.3222 f
+  reg_bank_inst/intern_read_data[0] (reg_bank)          0.0000     2.3222 f
+  slave_fsm_inst/intern_read_data[0] (slave_fsm)        0.0000     2.3222 f
+  slave_fsm_inst/U197/ZN (NAND2_X1)                     0.1237     2.4458 r
+  slave_fsm_inst/U199/ZN (NAND2_X1)                     0.0833     2.5291 f
+  slave_fsm_inst/RDATA_reg[0]/D (DFFR_X1)               0.0000     2.5291 f
+  data arrival time                                                2.5291
+
+  clock ACLK (rise edge)                                3.0000     3.0000
+  clock network delay (ideal)                           0.0000     3.0000
+  clock uncertainty                                    -0.0500     2.9500
+  slave_fsm_inst/RDATA_reg[0]/CK (DFFR_X1)              0.0000     2.9500 r
+  library setup time                                   -0.4189     2.5311
+  data required time                                               2.5311
+  --------------------------------------------------------------------------
+  data required time                                               2.5311
+  data arrival time                                               -2.5291
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0020
+
+
+1

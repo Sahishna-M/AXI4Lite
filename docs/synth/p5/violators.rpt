@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : axi_lite_top
+Version: W-2024.09-SP2
+Date   : Wed Oct 21 16:13:22 2026
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   axi_lite_top               0.0000       5331.9702      -5331.9702
+                                                                    (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   axi_lite_top               0.0000       17002964.0000  -17002964.0000
+                                                                    (VIOLATED)
+
+
+1

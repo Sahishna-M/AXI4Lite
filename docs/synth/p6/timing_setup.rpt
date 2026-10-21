@@ -1,0 +1,61 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : axi_lite_top
+Version: W-2024.09-SP2
+Date   : Wed Oct 21 16:12:23 2026
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm
+Wire Load Model Mode: top
+
+  Startpoint: slave_fsm_inst/intern_raddr_reg[1]
+              (rising edge-triggered flip-flop clocked by ACLK)
+  Endpoint: sync_fifo_inst/read_ptr_reg[2]
+            (rising edge-triggered flip-flop clocked by ACLK)
+  Path Group: ACLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ACLK (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  slave_fsm_inst/intern_raddr_reg[1]/CK (DFFR_X1)       0.0000     0.0000 r
+  slave_fsm_inst/intern_raddr_reg[1]/Q (DFFR_X1)        0.6769     0.6769 f
+  slave_fsm_inst/intern_raddr[1] (slave_fsm)            0.0000     0.6769 f
+  reg_bank_inst/intern_raddr[1] (reg_bank)              0.0000     0.6769 f
+  reg_bank_inst/U43/ZN (OR4_X1)                         0.6714     1.3482 f
+  reg_bank_inst/U41/ZN (OR2_X1)                         0.2134     1.5617 f
+  reg_bank_inst/U56/ZN (NOR3_X1)                        0.4725     2.0341 r
+  reg_bank_inst/U57/ZN (NAND2_X1)                       0.1276     2.1617 f
+  reg_bank_inst/U58/ZN (NOR2_X1)                        0.2607     2.4224 r
+  reg_bank_inst/U59/ZN (NAND2_X1)                       0.1112     2.5336 f
+  reg_bank_inst/U38/ZN (INV_X1)                         0.0903     2.6239 r
+  reg_bank_inst/U34/ZN (AND2_X2)                        0.5173     3.1412 r
+  reg_bank_inst/U46/ZN (AND2_X4)                        0.7987     3.9399 r
+  reg_bank_inst/pop (reg_bank)                          0.0000     3.9399 r
+  sync_fifo_inst/pop (sync_fifo_WIDTH32_DEPTH16)        0.0000     3.9399 r
+  sync_fifo_inst/U457/ZN (AOI21_X1)                     0.2128     4.1527 f
+  sync_fifo_inst/U458/ZN (AOI21_X1)                     0.5124     4.6652 r
+  sync_fifo_inst/U464/ZN (OAI221_X1)                    0.2623     4.9274 f
+  sync_fifo_inst/read_ptr_reg[2]/D (DFFR_X1)            0.0000     4.9274 f
+  data arrival time                                                4.9274
+
+  clock ACLK (rise edge)                                6.0000     6.0000
+  clock network delay (ideal)                           0.0000     6.0000
+  clock uncertainty                                    -0.0500     5.9500
+  sync_fifo_inst/read_ptr_reg[2]/CK (DFFR_X1)           0.0000     5.9500 r
+  library setup time                                   -0.4561     5.4939
+  data required time                                               5.4939
+  --------------------------------------------------------------------------
+  data required time                                               5.4939
+  data arrival time                                               -4.9274
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.5664
+
+
+1
